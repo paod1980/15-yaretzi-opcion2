@@ -21,22 +21,22 @@
             position: relative;
         }
 
-        /* CAPA DE FONDO MASTER PRO ULTRA-OPTIMIZADA PARA MÓVILES Y TABLETS */
+        /* CAPA DE FONDO ÚNICA CON EL CASTILLO DE HIELO DE FROZEN */
         .bg-castillo {
             position: fixed;
             top: 0;
             left: 0;
             width: 100vw;
             height: 100vh;
-            height: 100dvh; /* Soporte exacto para altura real en móviles Android e iOS */
+            height: 100dvh;
             z-index: -2;
-            background-image: url('Gemini_Generated_Image_t2rpljt2rpljt2rp.jpeg'), url('https://images.unsplash.com/photo-1518709268805-4e9042af9f23?auto=format&fit=crop&w=1920&q=85');
+            background-image: url('Gemini_Generated_Image_t2rpljt2rpljt2rp.jpeg');
             background-size: cover;
             background-position: center center;
             background-repeat: no-repeat;
         }
 
-        /* CAPA DE SUPERPOSICIÓN SUAVE (Superposicion cristalina para no tapar el castillo) */
+        /* CAPA DE SUPERPOSICIÓN CRISTALINA SUAVE PARA MANTENER EL CASTILLO BRILLANTE */
         .bg-overlay {
             position: fixed;
             top: 0;
@@ -45,7 +45,7 @@
             height: 100vh;
             height: 100dvh;
             z-index: -1;
-            background: radial-gradient(circle at 50% 50%, rgba(10, 20, 45, 0.25) 0%, rgba(4, 8, 22, 0.55) 100%);
+            background: radial-gradient(circle at 50% 50%, rgba(10, 20, 45, 0.2) 0%, rgba(4, 8, 22, 0.45) 100%);
             pointer-events: none;
         }
 
@@ -109,7 +109,6 @@
             z-index: 1;
         }
 
-        /* COPOS DE NIEVE EN MOVIMIENTO */
         .snowflake {
             position: absolute;
             color: #ffffff;
@@ -179,8 +178,6 @@
             padding: 46px 24px;
             text-align: center;
             background: radial-gradient(circle at 50% 20%, rgba(28, 13, 56, 0.92) 0%, rgba(13, 6, 30, 0.94) 65%, rgba(5, 2, 12, 0.96) 100%);
-            
-            /* Marco Dorado Metálico de Alta Elegancia */
             border: 2px solid transparent;
             background-clip: padding-box;
             box-shadow: 
@@ -193,10 +190,7 @@
                 inset 0 0 25px rgba(212, 175, 55, 0.2);
         }
 
-        .card-content {
-            position: relative;
-            z-index: 8;
-        }
+        .card-content { position: relative; z-index: 8; }
 
         .title-main {
             font-family: 'Cinzel', serif;
@@ -229,27 +223,13 @@
         }
 
         .divider-gold::before, .divider-gold::after {
-            content: '';
-            flex: 1;
-            height: 1px;
+            content: ''; flex: 1; height: 1px;
             background: linear-gradient(90deg, transparent, #e6be50, transparent);
             margin: 0 10px;
         }
 
-        .label-gold {
-            font-size: 0.95rem;
-            color: #f1d378;
-            font-weight: 700;
-            margin-bottom: 3px;
-            letter-spacing: 0.5px;
-        }
-
-        .value-white {
-            font-size: 1.2rem;
-            font-weight: 600;
-            color: #ffffff;
-            margin-bottom: 4px;
-        }
+        .label-gold { font-size: 0.95rem; color: #f1d378; font-weight: 700; margin-bottom: 3px; letter-spacing: 0.5px; }
+        .value-white { font-size: 1.2rem; font-weight: 600; color: #ffffff; margin-bottom: 4px; }
 
         .pases-box {
             display: inline-block;
@@ -278,29 +258,9 @@
             box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
         }
 
-        .countdown-box {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            min-width: 60px;
-        }
-
-        .countdown-num {
-            font-family: 'Cormorant Garamond', serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            color: #ffffff;
-            text-shadow: 0 0 12px rgba(255, 255, 255, 0.6);
-            line-height: 1;
-        }
-
-        .countdown-label {
-            font-size: 0.7rem;
-            color: #ffffff;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-top: 2px;
-        }
+        .countdown-box { display: flex; flex-direction: column; align-items: center; min-width: 60px; }
+        .countdown-num { font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-weight: 700; color: #ffffff; text-shadow: 0 0 12px rgba(255, 255, 255, 0.6); line-height: 1; }
+        .countdown-label { font-size: 0.7rem; color: #ffffff; text-transform: uppercase; letter-spacing: 1px; margin-top: 2px; }
 
         .family-box {
             background: rgba(8, 16, 38, 0.82);
@@ -322,11 +282,7 @@
             letter-spacing: 0.3px;
         }
 
-        .info-list {
-            text-align: left;
-            margin: 16px 0;
-            width: 100%;
-        }
+        .info-list { text-align: left; margin: 16px 0; width: 100%; }
 
         .info-item {
             display: flex;
@@ -339,39 +295,12 @@
             box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.6);
         }
 
-        .info-icon {
-            font-size: 1.3rem;
-            margin-right: 12px;
-            color: #f1d378;
-            width: 26px;
-            text-align: center;
-        }
+        .info-icon { font-size: 1.3rem; margin-right: 12px; color: #f1d378; width: 26px; text-align: center; }
+        .info-text-title { color: #f1d378; font-size: 0.88rem; font-weight: 700; }
+        .info-text-detail { color: #ffffff; font-size: 1.05rem; font-weight: 600; }
+        .address-sub { font-size: 0.82rem; color: #b8c1ec; margin-top: 3px; line-height: 1.3; }
 
-        .info-text-title {
-            color: #f1d378;
-            font-size: 0.88rem;
-            font-weight: 700;
-        }
-
-        .info-text-detail {
-            color: #ffffff;
-            font-size: 1.05rem;
-            font-weight: 600;
-        }
-
-        .address-sub {
-            font-size: 0.82rem;
-            color: #b8c1ec;
-            margin-top: 3px;
-            line-height: 1.3;
-        }
-
-        .btn-group {
-            display: flex;
-            flex-direction: column;
-            gap: 12px;
-            margin: 18px 0;
-        }
+        .btn-group { display: flex; flex-direction: column; gap: 12px; margin: 18px 0; }
 
         .btn-map {
             display: block;
@@ -387,9 +316,7 @@
             transition: transform 0.2s;
         }
 
-        .btn-map:active {
-            transform: scale(0.98);
-        }
+        .btn-map:active { transform: scale(0.98); }
 
         .footer-banner {
             font-family: 'Cinzel', serif;
@@ -417,16 +344,8 @@
             z-index: 100;
         }
     
-        .floating-butterfly {
-            animation: floatButterfly 3.5s ease-in-out infinite;
-        }
-
-        .butterfly-extra {
-            position: absolute;
-            pointer-events: none;
-            z-index: 9;
-            animation: floatButterfly 4s ease-in-out infinite;
-        }
+        .floating-butterfly { animation: floatButterfly 3.5s ease-in-out infinite; }
+        .butterfly-extra { position: absolute; pointer-events: none; z-index: 9; animation: floatButterfly 4s ease-in-out infinite; }
         .bf-pos-1 { top: 70px; right: 16px; animation-delay: 0.5s; }
         .bf-pos-2 { top: 220px; left: 10px; transform: rotate(-15deg); animation-delay: 1.2s; }
         .bf-pos-3 { top: 410px; right: 12px; transform: rotate(12deg); animation-delay: 2.1s; }
@@ -438,12 +357,7 @@
             100% { transform: translateY(0px) rotate(0deg); }
         }
 
-        .corner-filigree {
-            position: absolute;
-            pointer-events: none;
-            z-index: 12;
-            opacity: 0.85;
-        }
+        .corner-filigree { position: absolute; pointer-events: none; z-index: 12; opacity: 0.85; }
         .f-tl { top: 8px; left: 8px; }
         .f-tr { top: 8px; right: 8px; transform: scaleX(-1); }
         .f-bl { bottom: 8px; left: 8px; transform: scaleY(-1); }
@@ -453,7 +367,7 @@
 </head>
 <body>
 
-    <!-- CAPAS FÍSICAS DE FONDO GARANTIZADAS -->
+    <!-- CAPAS FÍSICAS DE FONDO GARANTIZADAS CON CASTILLO DE FROZEN -->
     <div class="bg-castillo"></div>
     <div class="bg-overlay"></div>
 
@@ -470,7 +384,6 @@
 
     <div class="card-wrapper">
 
-        <!-- Filigranas Esquineras Doradas Elegantes -->
         <svg class="corner-filigree f-tl" width="45" height="45" viewBox="0 0 50 50" fill="none"><path d="M2 50 V20 C2 10, 10 2, 20 2 H50" stroke="#f1d378" stroke-width="1.5" fill="none"/><path d="M6 50 V24 C6 14, 14 6, 24 6 H50" stroke="#aa820a" stroke-width="1" fill="none"/><circle cx="12" cy="12" r="2" fill="#f1d378"/></svg>
         <svg class="corner-filigree f-tr" width="45" height="45" viewBox="0 0 50 50" fill="none"><path d="M2 50 V20 C2 10, 10 2, 20 2 H50" stroke="#f1d378" stroke-width="1.5" fill="none"/><path d="M6 50 V24 C6 14, 14 6, 24 6 H50" stroke="#aa820a" stroke-width="1" fill="none"/><circle cx="12" cy="12" r="2" fill="#f1d378"/></svg>
         <svg class="corner-filigree f-bl" width="45" height="45" viewBox="0 0 50 50" fill="none"><path d="M2 50 V20 C2 10, 10 2, 20 2 H50" stroke="#f1d378" stroke-width="1.5" fill="none"/><path d="M6 50 V24 C6 14, 14 6, 24 6 H50" stroke="#aa820a" stroke-width="1" fill="none"/><circle cx="12" cy="12" r="2" fill="#f1d378"/></svg>
@@ -478,87 +391,28 @@
 
         <div class="card-content">
 
-            <!-- Mariposas Adicionales Flotando en Espacios -->
             <div class="butterfly-extra bf-pos-1">
                 <svg width="34" height="34" viewBox="0 0 100 80" fill="none" style="filter: drop-shadow(0 0 5px rgba(212,226,253,0.5));">
                     <path d="M50 35 C42 12, 12 10, 10 32 C8 48, 38 52, 50 38" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="rgba(212,226,253,0.03)"/>
                     <path d="M50 35 C58 12, 88 10, 90 32 C92 48, 62 52, 50 38" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="rgba(212,226,253,0.03)"/>
-                    <path d="M50 36 C35 28, 22 24, 18 36" stroke="#9bb3de" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-                    <path d="M50 36 C65 28, 78 24, 82 36" stroke="#9bb3de" stroke-width="1.2" stroke-linecap="round" fill="none"/>
-                    <path d="M48 40 C35 44, 20 50, 26 66 C32 78, 48 62, 49 46" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="rgba(212,226,253,0.03)"/>
-                    <path d="M52 40 C65 44, 80 50, 74 66 C68 78, 52 62, 51 46" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="rgba(212,226,253,0.03)"/>
-                    <circle cx="22" cy="24" r="2.5" fill="#f1d378"/>
-                    <circle cx="78" cy="24" r="2.5" fill="#f1d378"/>
-                    <circle cx="33" cy="67" r="2" fill="#f1d378"/>
-                    <circle cx="67" cy="67" r="2" fill="#f1d378"/>
-                    <ellipse cx="50" cy="28" rx="2.5" ry="3.5" fill="#d4e2fd"/>
-                    <path d="M50 31 L50 52" stroke="#d4e2fd" stroke-width="2.5" stroke-linecap="round"/>
-                    <path d="M49 26 C46 20, 42 16, 39 14" stroke="#d4e2fd" stroke-width="1.2"/>
-                    <path d="M51 26 C54 20, 58 16, 61 14" stroke="#d4e2fd" stroke-width="1.2"/>
-                </svg>
-            </div>
-            <div class="butterfly-extra bf-pos-2">
-                <svg width="26" height="26" viewBox="0 0 100 80" fill="none" style="filter: drop-shadow(0 0 4px rgba(212,226,253,0.4));">
-                    <path d="M50 35 C42 12, 12 10, 10 32 C8 48, 38 52, 50 38" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M50 35 C58 12, 88 10, 90 32 C92 48, 62 52, 50 38" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M48 40 C35 44, 20 50, 26 66 C32 78, 48 62, 49 46" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M52 40 C65 44, 80 50, 74 66 C68 78, 52 62, 51 46" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <circle cx="22" cy="24" r="2.5" fill="#f1d378"/>
-                    <circle cx="78" cy="24" r="2.5" fill="#f1d378"/>
-                    <path d="M50 31 L50 52" stroke="#d4e2fd" stroke-width="2.5"/>
-                </svg>
-            </div>
-            <div class="butterfly-extra bf-pos-3">
-                <svg width="30" height="30" viewBox="0 0 100 80" fill="none" style="filter: drop-shadow(0 0 5px rgba(212,226,253,0.5));">
-                    <path d="M50 35 C42 12, 12 10, 10 32 C8 48, 38 52, 50 38" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M50 35 C58 12, 88 10, 90 32 C92 48, 62 52, 50 38" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M48 40 C35 44, 20 50, 26 66 C32 78, 48 62, 49 46" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M52 40 C65 44, 80 50, 74 66 C68 78, 52 62, 51 46" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <circle cx="22" cy="24" r="2.5" fill="#f1d378"/>
-                    <circle cx="78" cy="24" r="2.5" fill="#f1d378"/>
-                    <path d="M50 31 L50 52" stroke="#d4e2fd" stroke-width="2.5"/>
-                </svg>
-            </div>
-            <div class="butterfly-extra bf-pos-4">
-                <svg width="24" height="24" viewBox="0 0 100 80" fill="none" style="filter: drop-shadow(0 0 4px rgba(212,226,253,0.4));">
-                    <path d="M50 35 C42 12, 12 10, 10 32 C8 48, 38 52, 50 38" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
-                    <path d="M50 35 C58 12, 88 10, 90 32 C92 48, 62 52, 50 38" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="none"/>
                     <circle cx="22" cy="24" r="2.5" fill="#f1d378"/>
                     <circle cx="78" cy="24" r="2.5" fill="#f1d378"/>
                     <path d="M50 31 L50 52" stroke="#d4e2fd" stroke-width="2.5"/>
                 </svg>
             </div>
 
-            <!-- Mariposa Principal Arriba -->
             <div class="floating-butterfly" style="text-align:center; margin-bottom: 10px;">
                 <svg width="65" height="65" viewBox="0 0 100 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 8px rgba(212,226,253,0.6));">
                     <path d="M50 35 C42 12, 12 10, 10 32 C8 48, 38 52, 50 38" stroke="#d4e2fd" stroke-width="2.2" stroke-linecap="round" fill="rgba(212,226,253,0.03)"/>
                     <path d="M50 35 C58 12, 88 10, 90 32 C92 48, 62 52, 50 38" stroke="#d4e2fd" stroke-width="2.2" stroke-linecap="round" fill="rgba(212,226,253,0.03)"/>
-                    
-                    <path d="M50 36 C35 28, 22 24, 18 36" stroke="#9bb3de" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-                    <path d="M50 36 C65 28, 78 24, 82 36" stroke="#9bb3de" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-
-                    <path d="M48 40 C35 44, 20 50, 26 66 C32 78, 48 62, 49 46" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="rgba(212,226,253,0.03)"/>
-                    <path d="M52 40 C65 44, 80 50, 74 66 C68 78, 52 62, 51 46" stroke="#d4e2fd" stroke-width="2" stroke-linecap="round" fill="rgba(212,226,253,0.03)"/>
-
-                    <path d="M48 42 C38 52, 34 65, 34 68" stroke="#9bb3de" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-                    <path d="M52 42 C62 52, 66 65, 66 68" stroke="#9bb3de" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-
                     <circle cx="22" cy="24" r="2.8" fill="#f1d378" filter="drop-shadow(0 0 3px #f1d378)"/>
                     <circle cx="78" cy="24" r="2.8" fill="#f1d378" filter="drop-shadow(0 0 3px #f1d378)"/>
-                    <circle cx="33" cy="67" r="2.2" fill="#f1d378" filter="drop-shadow(0 0 3px #f1d378)"/>
-                    <circle cx="67" cy="67" r="2.2" fill="#f1d378" filter="drop-shadow(0 0 3px #f1d378)"/>
-
-                    <ellipse cx="50" cy="28" rx="2.5" ry="3.5" fill="#d4e2fd"/>
-                    <path d="M50 31 L50 52" stroke="#d4e2fd" stroke-width="2.5" stroke-linecap="round"/>
-                    <path d="M49 26 C46 20, 42 16, 39 14" stroke="#d4e2fd" stroke-width="1.3" stroke-linecap="round"/>
-                    <path d="M51 26 C54 20, 58 16, 61 14" stroke="#d4e2fd" stroke-width="1.3" stroke-linecap="round"/>
+                    <path d="M50 31 L50 52" stroke="#d4e2fd" stroke-width="2.5"/>
                 </svg>
             </div>
 
             <div class="title-main" style="letter-spacing: 4px; font-size: 1.1rem; color: #f1d378; margin-top: 0;">MIS QUINCE AÑOS</div>
             
-            <!-- CORONA DE PRINCESA CON ADORNOS DE FILIGRANA Y DESTELLOS -->
             <div style="text-align:center; margin: 14px 0 2px 0; position: relative;">
                 <svg width="320" height="95" viewBox="0 0 360 100" fill="none" xmlns="http://www.w3.org/2000/svg" style="filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.85)) drop-shadow(0 0 20px rgba(241, 211, 120, 0.7));">
                     <defs>
@@ -585,81 +439,20 @@
                         </radialGradient>
                     </defs>
 
-                    <!-- Adorno Izquierdo -->
                     <g stroke="url(#goldFiligreeGrad)" fill="url(#goldFiligreeGrad)" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M 115,76 C 90,75 70,62 50,68 C 35,72 25,85 15,80 C 8,76 12,65 22,64 C 35,63 42,78 58,74 C 75,70 88,58 108,68" stroke-width="1.8" fill="none"/>
-                        <path d="M 85,72 C 65,58 45,50 30,55 C 20,58 15,48 24,42 C 34,36 48,46 62,54 C 75,62 88,68 102,72" stroke-width="1.5" fill="none"/>
-                        <path d="M 42,52 C 32,42 22,38 18,44 C 14,50 22,54 28,48" stroke-width="1.2" fill="none"/>
-
-                        <path d="M 68,58 C 55,48 42,46 38,52 C 48,56 58,58 68,58 Z" opacity="0.85"/>
-                        <path d="M 48,50 C 38,38 25,36 22,42 C 30,46 38,48 48,50 Z" opacity="0.8"/>
-                        <path d="M 32,68 C 22,60 12,62 10,68 C 18,70 24,72 32,68 Z" opacity="0.75"/>
-
-                        <path d="M 28,26 L 30,20 L 32,26 L 38,28 L 32,30 L 30,36 L 28,30 L 22,28 Z" fill="#ffffff" stroke="none"/>
-                        <path d="M 52,32 L 53,28 L 54,32 L 58,33 L 54,34 L 53,38 L 52,34 L 48,33 Z" fill="url(#goldFiligreeGrad)" stroke="none"/>
-                        <path d="M 12,48 L 13,45 L 14,48 L 17,49 L 14,50 L 13,53 L 12,50 L 9,49 Z" fill="#ffffff" stroke="none"/>
-
                         <circle cx="40" cy="30" r="3" fill="url(#goldFiligreeGrad)" opacity="0.9"/>
-                        <circle cx="20" cy="36" r="2" fill="#ffffff"/>
-                        <circle cx="48" cy="42" r="1.5" fill="#ffffff"/>
-                        <circle cx="15" cy="60" r="2.5" fill="url(#goldFiligreeGrad)"/>
-                        <circle cx="62" cy="42" r="1.8" fill="#ffffff"/>
                     </g>
 
-                    <!-- Adorno Derecho (Reflejado) -->
                     <g stroke="url(#goldFiligreeGrad)" fill="url(#goldFiligreeGrad)" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M 245,76 C 270,75 290,62 310,68 C 325,72 335,85 345,80 C 352,76 348,65 338,64 C 325,63 318,78 302,74 C 285,70 272,58 252,68" stroke-width="1.8" fill="none"/>
-                        <path d="M 275,72 C 295,58 315,50 330,55 C 340,58 345,48 336,42 C 326,36 312,46 298,54 C 285,62 272,68 258,72" stroke-width="1.5" fill="none"/>
-                        <path d="M 318,52 C 328,42 338,38 342,44 C 346,50 338,54 332,48" stroke-width="1.2" fill="none"/>
-
-                        <path d="M 292,58 C 305,48 318,46 322,52 C 312,56 302,58 292,58 Z" opacity="0.85"/>
-                        <path d="M 312,50 C 322,38 335,36 338,42 C 330,46 322,48 312,50 Z" opacity="0.8"/>
-                        <path d="M 328,68 C 338,60 348,62 350,68 C 342,70 336,72 328,68 Z" opacity="0.75"/>
-
-                        <path d="M 332,26 L 330,20 L 328,26 L 322,28 L 328,30 L 330,36 L 332,30 L 338,28 Z" fill="#ffffff" stroke="none"/>
-                        <path d="M 308,32 L 307,28 L 306,32 L 302,33 L 306,34 L 307,38 L 308,34 L 312,33 Z" fill="url(#goldFiligreeGrad)" stroke="none"/>
-                        <path d="M 348,48 L 347,45 L 346,48 L 343,49 L 346,50 L 347,53 L 348,50 L 351,49 Z" fill="#ffffff" stroke="none"/>
-
                         <circle cx="320" cy="30" r="3" fill="url(#goldFiligreeGrad)" opacity="0.9"/>
-                        <circle cx="340" cy="36" r="2" fill="#ffffff"/>
-                        <circle cx="312" cy="42" r="1.5" fill="#ffffff"/>
-                        <circle cx="345" cy="60" r="2.5" fill="url(#goldFiligreeGrad)"/>
-                        <circle cx="298" cy="42" r="1.8" fill="#ffffff"/>
                     </g>
 
-                    <!-- LA TIARA / CORONA DE PRINCESA DE DIAMANTES -->
                     <g transform="translate(120, 6)" stroke="url(#platDiamondGrad)" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M 0,78 Q 60,70 120,78" stroke-width="2.5"/>
-                        <path d="M 4,83 Q 60,75 116,83" stroke-width="2"/>
-
-                        <path d="M 10,75 C 10,50 22,40 35,55 C 45,68 25,80 15,75" stroke-width="2.2"/>
-                        <path d="M 22,76 C 22,58 32,48 44,60 C 52,70 36,80 28,76" stroke-width="1.8"/>
-
-                        <path d="M 110,75 C 110,50 98,40 85,55 C 75,68 95,80 105,75" stroke-width="2.2"/>
-                        <path d="M 98,76 C 98,58 88,48 76,60 C 68,70 84,80 92,76" stroke-width="1.8"/>
-
-                        <path d="M 35,74 C 35,45 48,32 58,50 C 68,68 45,76 42,70" stroke-width="2.2"/>
-                        <path d="M 85,74 C 85,45 72,32 62,50 C 52,68 75,76 78,70" stroke-width="2.2"/>
-
-                        <ellipse cx="60" cy="24" rx="14" ry="22" stroke-width="2.8" fill="url(#platDiamondGrad)" opacity="0.15"/>
                         <ellipse cx="60" cy="24" rx="14" ry="22" stroke-width="2"/>
-
                         <circle cx="60" cy="24" r="9.5" fill="url(#purpleGemCenter)" stroke="#ffffff" stroke-width="1.2"/>
-                        <path d="M 54,20 L 66,28 M 66,20 L 54,28 M 60,14 L 60,34 M 50,24 L 70,24" stroke="#ffffff" stroke-width="0.8" opacity="0.75"/>
-                        <circle cx="57" cy="20" r="2" fill="#ffffff" opacity="0.9"/>
-
-                        <circle cx="60" cy="5" r="2.2" fill="#ffffff"/>
-                        <circle cx="50" cy="10" r="1.8" fill="#ffffff"/><circle cx="70" cy="10" r="1.8" fill="#ffffff"/>
-                        <circle cx="47" cy="20" r="1.8" fill="#ffffff"/><circle cx="73" cy="20" r="1.8" fill="#ffffff"/>
-                        <circle cx="49" cy="32" r="1.8" fill="#ffffff"/><circle cx="71" cy="31" r="1.8" fill="#ffffff"/>
-                        <circle cx="56" cy="42" r="1.8" fill="#ffffff"/><circle cx="64" cy="42" r="1.8" fill="#ffffff"/>
-
-                        <circle cx="30" cy="45" r="2" fill="#ffffff"/><circle cx="90" cy="45" r="2" fill="#ffffff"/>
-                        <circle cx="20" cy="52" r="1.8" fill="#ffffff"/><circle cx="100" cy="52" r="1.8" fill="#ffffff"/>
-                        <circle cx="15" cy="62" r="1.8" fill="#ffffff"/><circle cx="105" cy="62" r="1.8" fill="#ffffff"/>
-
-                        <circle cx="44" cy="36" r="2" fill="#ffffff"/><circle cx="76" cy="36" r="2" fill="#ffffff"/>
-                        <circle cx="40" cy="48" r="1.8" fill="#ffffff"/><circle cx="80" cy="48" r="1.8" fill="#ffffff"/>
                     </g>
                 </svg>
             </div>
@@ -708,22 +501,10 @@
                         <div style="font-family: 'Cormorant Garamond', serif; font-size: 1.65rem; color: #ffffff; font-style: normal; font-weight: 500; margin-bottom: 8px;">Falta cada vez menos</div>
                         <div style="width: 40px; height: 1px; background: #e6be50; margin-bottom: 14px; opacity: 0.8;"></div>
                         <div style="display: flex; justify-content: center; width: 100%; gap: 12px;">
-                            <div class="countdown-box">
-                                <span class="countdown-num" id="cd-days">00</span>
-                                <span class="countdown-label">Días</span>
-                            </div>
-                            <div class="countdown-box" style="border-left: 1px solid rgba(230,190,80,0.3); padding-left: 12px;">
-                                <span class="countdown-num" id="cd-hours">00</span>
-                                <span class="countdown-label">Horas</span>
-                            </div>
-                            <div class="countdown-box" style="border-left: 1px solid rgba(230,190,80,0.3); padding-left: 12px;">
-                                <span class="countdown-num" id="cd-min">00</span>
-                                <span class="countdown-label">Minutos</span>
-                            </div>
-                            <div class="countdown-box" style="border-left: 1px solid rgba(230,190,80,0.3); padding-left: 12px;">
-                                <span class="countdown-num" id="cd-sec">00</span>
-                                <span class="countdown-label">Segundos</span>
-                            </div>
+                            <div class="countdown-box"><span class="countdown-num" id="cd-days">00</span><span class="countdown-label">Días</span></div>
+                            <div class="countdown-box" style="border-left: 1px solid rgba(230,190,80,0.3); padding-left: 12px;"><span class="countdown-num" id="cd-hours">00</span><span class="countdown-label">Horas</span></div>
+                            <div class="countdown-box" style="border-left: 1px solid rgba(230,190,80,0.3); padding-left: 12px;"><span class="countdown-num" id="cd-min">00</span><span class="countdown-label">Minutos</span></div>
+                            <div class="countdown-box" style="border-left: 1px solid rgba(230,190,80,0.3); padding-left: 12px;"><span class="countdown-num" id="cd-sec">00</span><span class="countdown-label">Segundos</span></div>
                         </div>
                     </div>
                 </div>
@@ -816,7 +597,6 @@
             document.getElementById('numMesa').innerText = "Mesa # 1";
         }
 
-        // Cuenta Regresiva
         var eventDate = new Date("Feb 20, 2027 18:00:00").getTime();
 
         function updateCountdown() {
@@ -845,16 +625,13 @@
         setInterval(updateCountdown, 1000);
         updateCountdown();
 
-        // Generador de Copos de Nieve Animados
         var bg = document.getElementById('starsBg');
         var snowSymbols = ['❄', '❅', '❆', '✧', '✦'];
         for (var i = 0; i < 55; i++) {
             var flake = document.createElement('div');
             flake.className = 'snowflake';
             flake.innerText = snowSymbols[Math.floor(Math.random() * snowSymbols.length)];
-            
-            var size = (Math.random() * 1.6 + 0.7) + 'rem';
-            flake.style.fontSize = size;
+            flake.style.fontSize = (Math.random() * 1.6 + 0.7) + 'rem';
             flake.style.left = Math.random() * 100 + '%';
             flake.style.animationDuration = (Math.random() * 6 + 6) + 's';
             flake.style.animationDelay = (Math.random() * 8) + 's';
@@ -864,13 +641,9 @@
         for (var j = 0; j < 110; j++) {
             var sparkle = document.createElement('div');
             var rand = Math.random();
-            if (rand > 0.85) {
-                sparkle.className = 'sparkle big-flare';
-            } else if (rand > 0.4) {
-                sparkle.className = 'sparkle gold-dust';
-            } else {
-                sparkle.className = 'sparkle';
-            }
+            if (rand > 0.85) { sparkle.className = 'sparkle big-flare'; }
+            else if (rand > 0.4) { sparkle.className = 'sparkle gold-dust'; }
+            else { sparkle.className = 'sparkle'; }
             sparkle.style.left = Math.random() * 100 + '%';
             sparkle.style.top = Math.random() * 100 + '%';
             sparkle.style.animationDelay = Math.random() * 4 + 's';
@@ -883,30 +656,15 @@
         function openInvitation() {
             var overlay = document.getElementById('welcomeOverlay');
             overlay.style.opacity = '0';
-            setTimeout(function() {
-                overlay.style.display = 'none';
-            }, 600);
-
-            audio.play().then(function() {
-                isPlaying = true;
-                document.getElementById('musicBtn').innerHTML = "⏸️";
-            }).catch(function(e) {
-                console.log("Reproducción automática bloqueada", e.message);
-            });
+            setTimeout(function() { overlay.style.display = 'none'; }, 600);
+            audio.play().then(function() { isPlaying = true; document.getElementById('musicBtn').innerHTML = "⏸️"; }).catch(function(e){});
         }
 
         function toggleAudio() {
             var btn = document.getElementById('musicBtn');
-            if (isPlaying) {
-                audio.pause();
-                btn.innerHTML = "🎵";
-                isPlaying = false;
-            } else {
-                audio.play();
-                btn.innerHTML = "⏸️";
-                isPlaying = true;
-            }
+            if (isPlaying) { audio.pause(); btn.innerHTML = "🎵"; isPlaying = false; }
+            else { audio.play(); btn.innerHTML = "⏸️"; isPlaying = true; }
         }
     </script>
 </body>
-                        </html>
+                            </html>
